@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms &amp; Conditions | Jotly</title>
+  <meta name="description" content="Jotly Terms & Conditions for the local-only notes app.">
+  <style>
+    :root {
+      --cream: #fff8ea;
+      --ink: #222222;
+      --coral: #ff6f61;
+      --yellow: #ffd45a;
+      --mint: #a7f3d0;
+      --paper: #ffffff;
+      --muted: #625d55;
+      --line: rgba(34, 34, 34, 0.12);
+      --shadow: 0 24px 70px rgba(34, 34, 34, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(255, 111, 97, 0.24), transparent 32%),
+        radial-gradient(circle at top right, rgba(167, 243, 208, 0.42), transparent 30%),
+        var(--cream);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      text-decoration: none;
+    }
+
+    .mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--yellow);
+      box-shadow: inset 0 -6px 0 rgba(34, 34, 34, 0.08);
+      font-size: 1.25rem;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav a {
+      display: inline-flex;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--ink);
+      color: #ffffff;
+      outline: none;
+    }
+
+    main {
+      padding: 18px 0 56px;
+    }
+
+    .document {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      padding: clamp(28px, 6vw, 58px);
+      background: linear-gradient(135deg, var(--coral), rgba(255, 255, 255, 0.62));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 22px 0 12px;
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 0.92;
+      letter-spacing: -0.08em;
+    }
+
+    .summary {
+      max-width: 760px;
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.12rem;
+      font-weight: 700;
+    }
+
+    .last-updated {
+      display: inline-flex;
+      margin-top: 24px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .content {
+      padding: clamp(26px, 5vw, 52px);
+    }
+
+    section + section {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.35rem, 3vw, 1.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      font-weight: 520;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0 36px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        display: grid;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="Jotly home">
+        <span class="mark" aria-hidden="true">J</span>
+        <span>Jotly</span>
+      </a>
+      <nav aria-label="Legal pages">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <article class="document">
+      <div class="hero">
+        <span class="eyebrow">Terms &amp; Conditions</span>
+        <h1>Jotly Terms &amp; Conditions</h1>
+        <p class="summary">These terms describe your responsibilities and Jotly's limitations as a local-only personal notes app.</p>
+        <span class="last-updated">Last Updated: June 25, 2026</span>
+      </div>
+
+      <div class="content">
+        <section>
+          <h2>Acceptance of Terms</h2>
+          <p>By downloading, installing, opening, or using Jotly, you agree to these Terms & Conditions. If you do not agree with these terms, do not use the app. These terms apply to your use of Jotly as a local-only personal notes application and should be read together with the Jotly Privacy Policy.</p>
+        </section>
+
+        <section>
+          <h2>Description of the App</h2>
+          <p>Jotly is a lightweight notes app that lets you create, edit, search, pin, favorite, color-code, and delete notes on your device. Jotly is intended for quick personal note taking and does not include cloud synchronization, online accounts, collaboration, backend storage, Firebase services, advertising, analytics, notification services, or special device permissions.</p>
+        </section>
+
+        <section>
+          <h2>User Responsibilities</h2>
+          <p>You are responsible for the content you enter into Jotly and for deciding whether the app is appropriate for your intended use. You should keep your device secure, maintain backups if you need them, and avoid storing information that requires stronger protections than local app storage provides. You are responsible for complying with laws, agreements, confidentiality obligations, and workplace or school policies that may apply to your own note content.</p>
+        </section>
+
+        <section>
+          <h2>Intellectual Property</h2>
+          <p>Jotly, including its name, design, interface, visual elements, and app materials, is protected by applicable intellectual property rights. You retain responsibility for and ownership of the original content you type into your notes. These terms do not grant you ownership of the Jotly app, branding, source materials, or related assets, except for rights expressly provided by applicable law or separate written permission.</p>
+        </section>
+
+        <section>
+          <h2>Data Storage</h2>
+          <p>Jotly stores notes and settings locally on your device using SharedPreferences. The app does not provide cloud backup, device-to-device sync, web access, account recovery, server-side restore, or remote export. Deleting the app, clearing app data, replacing your device, resetting your device, or relying on device settings that remove local data may permanently remove your notes.</p>
+        </section>
+
+        <section>
+          <h2>Limitation of Liability</h2>
+          <p>Jotly is provided for general personal note taking. To the maximum extent permitted by law, Jotly and its developers are not liable for lost notes, lost data, device issues, missed information, business interruption, indirect damages, incidental damages, consequential damages, special damages, or losses resulting from your use of or inability to use the app.</p>
+        </section>
+
+        <section>
+          <h2>Availability</h2>
+          <p>Jotly is designed to work locally on supported devices, but availability may vary based on your device, operating system, storage state, platform changes, app store requirements, or other conditions outside the app's control. We do not guarantee uninterrupted availability, compatibility with every device, or continued support for every operating system version.</p>
+        </section>
+
+        <section>
+          <h2>Updates</h2>
+          <p>Jotly may receive updates that improve reliability, usability, accessibility, legal content, compatibility, or overall quality. Updates may change, add, or remove features while preserving the app's local-only purpose. You are responsible for installing updates through your platform when they are available and for reviewing updated legal terms when they are posted.</p>
+        </section>
+
+        <section>
+          <h2>Termination</h2>
+          <p>You may stop using Jotly at any time by deleting your notes, clearing app data, or uninstalling the app. We may discontinue, suspend, or change the app in the future. Because Jotly does not use accounts, there is no account termination process within the app and no server-side user profile to delete.</p>
+        </section>
+
+        <section>
+          <h2>Governing Terms</h2>
+          <p>These Terms & Conditions are intended to describe the relationship between you and Jotly for use of the app. If any part of these terms is found unenforceable, the remaining sections remain in effect to the fullest extent permitted by law. Any rights you may have under mandatory consumer protection laws are not limited by these terms.</p>
+        </section>
+
+        <section>
+          <h2>Contact Information</h2>
+          <p>If you have questions about these Terms & Conditions, contact the Jotly team through the support or contact method provided with the app listing or project page. Please avoid sending private note content unless you intentionally choose to share it outside the app.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <span>&copy; 2026 Jotly. All rights reserved.</span>
+      <span><a href="index.html">Home</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
+    </div>
+  </footer>
+</body>
+</html>

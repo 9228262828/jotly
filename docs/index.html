@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jotly Legal & Support</title>
+  <meta name="description" content="Official Jotly legal information, including Privacy Policy and Terms & Conditions.">
+  <style>
+    :root {
+      --cream: #fff8ea;
+      --ink: #222222;
+      --coral: #ff6f61;
+      --yellow: #ffd45a;
+      --sky: #8fd3ff;
+      --mint: #a7f3d0;
+      --paper: #ffffff;
+      --muted: #625d55;
+      --line: rgba(34, 34, 34, 0.12);
+      --shadow: 0 24px 70px rgba(34, 34, 34, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(255, 212, 90, 0.45), transparent 34%),
+        radial-gradient(circle at top right, rgba(143, 211, 255, 0.38), transparent 30%),
+        var(--cream);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      text-decoration: none;
+    }
+
+    .mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--yellow);
+      box-shadow: inset 0 -6px 0 rgba(34, 34, 34, 0.08);
+      font-size: 1.25rem;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav a {
+      display: inline-flex;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--ink);
+      color: #ffffff;
+      outline: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 28px;
+      align-items: stretch;
+      padding: 34px 0 56px;
+    }
+
+    .hero-card,
+    .side-card,
+    .policy-card {
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero-card {
+      padding: clamp(28px, 6vw, 64px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--yellow);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 24px 0 18px;
+      font-size: clamp(2.75rem, 8vw, 6.75rem);
+      line-height: 0.9;
+      letter-spacing: -0.08em;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      font-weight: 650;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 17px;
+      background: var(--ink);
+      color: #ffffff;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: var(--coral);
+    }
+
+    .side-card {
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      padding: 28px;
+      background: var(--yellow);
+    }
+
+    .side-card h2,
+    .policy-card h2 {
+      margin: 0;
+      font-size: 1.55rem;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    .side-card p,
+    .policy-card p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .last-updated {
+      display: inline-flex;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding-bottom: 56px;
+    }
+
+    .policy-card {
+      padding: 28px;
+    }
+
+    .policy-card:nth-child(2) {
+      background: rgba(167, 243, 208, 0.78);
+    }
+
+    .policy-card a {
+      display: inline-flex;
+      margin-top: 20px;
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0 36px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    @media (max-width: 760px) {
+      .nav,
+      .hero,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: grid;
+        align-items: start;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="Jotly home">
+        <span class="mark" aria-hidden="true">J</span>
+        <span>Jotly</span>
+      </a>
+      <nav aria-label="Legal pages">
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-card">
+        <span class="eyebrow">Local-only notes</span>
+        <h1 id="page-title">Jotly keeps quick notes simple and private.</h1>
+        <p class="lead">Jotly is built for fast personal note taking on your device. There are no accounts, no backend services, no analytics, no advertising, and no third-party sharing. Your notes and preferences remain local to your device using SharedPreferences.</p>
+        <div class="actions">
+          <a class="button" href="privacy-policy.html">Read Privacy Policy</a>
+          <a class="button secondary" href="terms-conditions.html">Read Terms</a>
+        </div>
+      </div>
+
+      <aside class="side-card" aria-label="Last updated">
+        <span class="last-updated">Last Updated: June 25, 2026</span>
+        <h2>Release-ready legal information for Jotly users.</h2>
+        <p>These pages explain what Jotly stores, what it does not collect, and the terms that apply when using the app.</p>
+      </aside>
+    </section>
+
+    <section class="cards" aria-label="Legal page summaries">
+      <article class="policy-card">
+        <h2>Privacy Policy</h2>
+        <p>Explains Jotly's local device storage, no-account design, lack of analytics or advertising, deletion behavior, child privacy, and contact information.</p>
+        <a href="privacy-policy.html">Open Privacy Policy</a>
+      </article>
+      <article class="policy-card">
+        <h2>Terms &amp; Conditions</h2>
+        <p>Explains acceptable use, user responsibilities, intellectual property, local data storage, limitations, updates, availability, and governing terms.</p>
+        <a href="terms-conditions.html">Open Terms &amp; Conditions</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <span>&copy; 2026 Jotly. All rights reserved.</span>
+      <span>Capture ideas instantly.</span>
+    </div>
+  </footer>
+</body>
+</html>

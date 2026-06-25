@@ -19,6 +19,145 @@ const _lavender = Color(0xFFD8B4FE);
 
 const _notesKey = 'jotly.notes.v1';
 const _darkKey = 'jotly.dark.v1';
+const _appVersion = '1.0.0';
+const _appBuildNumber = '1';
+const _lastUpdatedLabel = 'June 25, 2026';
+
+class LegalSection {
+  final String heading;
+  final String body;
+
+  const LegalSection({
+    required this.heading,
+    required this.body,
+  });
+}
+
+const _privacySections = [
+  LegalSection(
+    heading: 'Introduction',
+    body:
+        'Jotly is designed as a simple, private notes app for capturing ideas quickly. This Privacy Policy explains how Jotly handles information when you create, edit, organize, search, favorite, pin, or delete notes. The app is intentionally local-only and does not require an account or any online service to function.',
+  ),
+  LegalSection(
+    heading: 'Information We Store',
+    body:
+        'Jotly stores the notes you choose to create, including note titles, note bodies, selected note colors, favorite status, pinned status, creation dates, and app preferences such as dark mode. This information is stored so the app can restore your notes and settings the next time you open it.',
+  ),
+  LegalSection(
+    heading: 'Local Device Storage',
+    body:
+        'All Jotly note data and app settings are saved locally on your device using SharedPreferences. Jotly does not upload your notes to a server, synchronize your notes across devices, or provide cloud backup. If your device is lost, reset, damaged, or if app data is cleared, your locally stored Jotly data may be lost.',
+  ),
+  LegalSection(
+    heading: 'No Account Required',
+    body:
+        'Jotly does not ask you to create an account, sign in, provide an email address, or submit profile information. Because there is no account system, Jotly does not provide account recovery, password reset, or server-side restore features.',
+  ),
+  LegalSection(
+    heading: 'No Personal Data Collection',
+    body:
+        'Jotly does not collect personal data from you. The app does not request your name, email address, phone number, precise location, contacts, photos, microphone, camera, or other personal information. Any personal information you type into a note remains part of your local note content on your device.',
+  ),
+  LegalSection(
+    heading: 'No Analytics',
+    body:
+        'Jotly does not include analytics, tracking pixels, behavioral measurement tools, crash reporting SDKs, or event logging services. We do not measure how you use the app, which notes you create, what you search for, or how often you open particular screens.',
+  ),
+  LegalSection(
+    heading: 'No Advertising',
+    body:
+        'Jotly does not display advertisements and does not use advertising identifiers. The app does not create advertising profiles, does not perform ad targeting, and does not share information with ad networks.',
+  ),
+  LegalSection(
+    heading: 'No Third-Party Sharing',
+    body:
+        'Because Jotly keeps your data on your device and does not operate a backend service, Jotly does not sell, rent, trade, disclose, or share your notes or app settings with third parties. Your device platform may provide its own system-level backup or storage behavior outside of Jotly; those platform features are governed by the policies and settings of your device provider.',
+  ),
+  LegalSection(
+    heading: 'Data Security',
+    body:
+        'Jotly relies on your device and operating system to protect locally stored app data. You are responsible for using appropriate device security measures, such as a passcode, biometric lock, and secure backups if available. Jotly is not intended to be a dedicated vault for passwords, financial secrets, medical records, or highly sensitive information.',
+  ),
+  LegalSection(
+    heading: 'Data Deletion',
+    body:
+        'You can delete individual notes in Jotly. After deleting a note, the app provides a short undo option. Once the undo period passes, the deleted note is removed from Jotly storage. You can also remove all locally stored Jotly data by clearing the app data through your device settings or uninstalling the app.',
+  ),
+  LegalSection(
+    heading: 'Children\'s Privacy',
+    body:
+        'Jotly does not knowingly collect personal information from children. The app does not include account registration, messaging, public posting, advertising, analytics, or server-side collection features. Parents or guardians who allow a child to use Jotly should understand that note content remains locally on the device.',
+  ),
+  LegalSection(
+    heading: 'Changes to this Policy',
+    body:
+        'We may update this Privacy Policy when Jotly changes or when legal, operational, or clarity improvements are needed. The updated policy will include a new last updated date. Continuing to use Jotly after an update means you acknowledge the revised policy.',
+  ),
+  LegalSection(
+    heading: 'Contact Information',
+    body:
+        'If you have questions about this Privacy Policy or Jotly\'s privacy practices, contact the Jotly team through the support or contact method provided with the app listing or project page.',
+  ),
+];
+
+const _termsSections = [
+  LegalSection(
+    heading: 'Acceptance of Terms',
+    body:
+        'By downloading, installing, opening, or using Jotly, you agree to these Terms & Conditions. If you do not agree with these terms, do not use the app. These terms apply to your use of Jotly as a local-only personal notes application.',
+  ),
+  LegalSection(
+    heading: 'Description of the App',
+    body:
+        'Jotly is a lightweight notes app that lets you create, edit, search, pin, favorite, color-code, and delete notes on your device. Jotly is intended for quick personal note taking and does not include cloud synchronization, online accounts, collaboration, backend storage, advertising, analytics, or notification services.',
+  ),
+  LegalSection(
+    heading: 'User Responsibilities',
+    body:
+        'You are responsible for the content you enter into Jotly and for deciding whether the app is appropriate for your intended use. You should keep your device secure, maintain backups if you need them, and avoid storing information that requires stronger protections than local app storage provides. You are also responsible for complying with laws and obligations that apply to your own note content.',
+  ),
+  LegalSection(
+    heading: 'Intellectual Property',
+    body:
+        'Jotly, including its name, design, interface, visual elements, and app materials, is protected by applicable intellectual property rights. You retain responsibility for and ownership of the original content you type into your notes. These terms do not grant you ownership of the Jotly app, branding, or related materials.',
+  ),
+  LegalSection(
+    heading: 'Data Storage',
+    body:
+        'Jotly stores notes and settings locally on your device using SharedPreferences. The app does not provide cloud backup, device-to-device sync, web access, account recovery, or server-side restore. Deleting the app, clearing app data, replacing your device, or relying on device settings that remove local data may permanently remove your notes.',
+  ),
+  LegalSection(
+    heading: 'Limitation of Liability',
+    body:
+        'Jotly is provided for general personal note taking. To the maximum extent permitted by law, Jotly and its developers are not liable for lost notes, lost data, device issues, missed reminders, business interruption, indirect damages, incidental damages, consequential damages, or losses resulting from your use of or inability to use the app.',
+  ),
+  LegalSection(
+    heading: 'Availability',
+    body:
+        'Jotly is designed to work locally on supported devices, but availability may vary based on your device, operating system, storage state, platform changes, or app store requirements. We do not guarantee uninterrupted availability, compatibility with every device, or continued support for all operating system versions.',
+  ),
+  LegalSection(
+    heading: 'Updates',
+    body:
+        'Jotly may receive updates that improve reliability, usability, accessibility, legal content, or compatibility. Updates may change or remove features while preserving the app\'s local-only purpose. You are responsible for installing updates through your platform when they are available.',
+  ),
+  LegalSection(
+    heading: 'Termination',
+    body:
+        'You may stop using Jotly at any time by deleting your notes, clearing app data, or uninstalling the app. We may discontinue or change the app in the future. Because Jotly does not use accounts, there is no account termination process within the app.',
+  ),
+  LegalSection(
+    heading: 'Governing Terms',
+    body:
+        'These Terms & Conditions are intended to describe the relationship between you and Jotly for use of the app. If any part of these terms is found unenforceable, the remaining sections remain in effect to the fullest extent permitted by law.',
+  ),
+  LegalSection(
+    heading: 'Contact Information',
+    body:
+        'If you have questions about these Terms & Conditions, contact the Jotly team through the support or contact method provided with the app listing or project page.',
+  ),
+];
 
 class JotlyApp extends StatefulWidget {
   const JotlyApp({super.key});
@@ -149,77 +288,89 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: _cream,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(28),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Spacer(),
-              Image.asset(
-                'assets/logo.png',
-                width: 150,
-                height: 150,
-                errorBuilder: (_, __, ___) => Container(
-                  width: 150,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    color: _yellow,
-                    borderRadius: BorderRadius.circular(36),
-                  ),
-                  child: const Icon(Icons.edit_note_rounded, size: 80),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            return SingleChildScrollView(
+              padding: const EdgeInsets.all(28),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  minHeight: max(0, constraints.maxHeight - 56),
                 ),
-              ),
-              const SizedBox(height: 34),
-              const Text(
-                'Jotly',
-                style: TextStyle(
-                  color: _ink,
-                  fontSize: 54,
-                  height: 1,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: -2,
-                ),
-              ),
-              const SizedBox(height: 12),
-              const Text(
-                'Capture ideas instantly.',
-                style: TextStyle(
-                  color: Color(0xFF5F5A52),
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              const Spacer(),
-              SizedBox(
-                width: double.infinity,
-                height: 58,
-                child: FilledButton(
-                  style: FilledButton.styleFrom(
-                    backgroundColor: _ink,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => HomeScreen(
-                          darkMode: darkMode,
-                          onDarkModeChanged: onDarkModeChanged,
+                child: IntrinsicHeight(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Spacer(),
+                      Image.asset(
+                        'assets/logo.png',
+                        width: 150,
+                        height: 150,
+                        errorBuilder: (_, __, ___) => Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                            color: _yellow,
+                            borderRadius: BorderRadius.circular(36),
+                          ),
+                          child: const Icon(Icons.edit_note_rounded, size: 80),
                         ),
                       ),
-                    );
-                  },
-                  child: const Text(
-                    'Open Notes',
-                    style: TextStyle(fontWeight: FontWeight.w800),
+                      const SizedBox(height: 34),
+                      const Text(
+                        'Jotly',
+                        style: TextStyle(
+                          color: _ink,
+                          fontSize: 54,
+                          height: 1,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: -2,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      const Text(
+                        'Capture ideas instantly.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xFF5F5A52),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const Spacer(),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 58,
+                        child: FilledButton(
+                          style: FilledButton.styleFrom(
+                            backgroundColor: _ink,
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => HomeScreen(
+                                  darkMode: darkMode,
+                                  onDarkModeChanged: onDarkModeChanged,
+                                ),
+                              ),
+                            );
+                          },
+                          child: const Text(
+                            'Open Notes',
+                            style: TextStyle(fontWeight: FontWeight.w800),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-            ],
-          ),
+            );
+          },
         ),
       ),
     );
@@ -247,6 +398,7 @@ class _HomeScreenState extends State<HomeScreen> {
   HomeTab tab = HomeTab.notes;
   String search = '';
 
+  final searchController = TextEditingController();
   final colors = const [_yellow, _sky, _mint, _lavender, Color(0xFFFFB4A2)];
 
   @override
@@ -261,11 +413,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
     if (data == null) return;
 
-    final decoded = jsonDecode(data) as List;
-    setState(() {
-      notes = decoded.map((e) => JotNote.fromJson(e)).toList();
-      sortNotes();
-    });
+    try {
+      final decoded = jsonDecode(data) as List;
+      setState(() {
+        notes = decoded.map((e) => JotNote.fromJson(e)).toList();
+        sortNotes();
+      });
+    } on Object {
+      // If local storage is ever corrupted, keep the app usable.
+      setState(() => notes = []);
+    }
   }
 
   Future<void> saveNotes() async {
@@ -284,8 +441,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<JotNote> get filteredNotes {
+    final query = search.trim().toLowerCase();
     var list = notes.where((note) {
-      final query = search.toLowerCase();
+      if (query.isEmpty) return true;
       return note.title.toLowerCase().contains(query) ||
           note.body.toLowerCase().contains(query);
     }).toList();
@@ -324,19 +482,27 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> deleteNote(JotNote note) async {
+    final noteTitle = note.title.trim().isEmpty ? 'Untitled' : note.title;
     final confirmed = await showDialog<bool>(
       context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('Delete note?'),
-        content: Text('Delete "${note.title}"?'),
+      builder: (dialogContext) => AlertDialog(
+        icon: const Icon(Icons.delete_outline_rounded),
+        title: const Text('Delete this note?'),
+        content: Text(
+          'This will remove "$noteTitle" from Jotly. You can undo the delete immediately after it happens.',
+        ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: const Text('Keep note'),
           ),
           FilledButton(
-            onPressed: () => Navigator.pop(context, true),
-            child: const Text('Delete'),
+            style: FilledButton.styleFrom(
+              backgroundColor: _coral,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: const Text('Delete note'),
           ),
         ],
       ),
@@ -345,18 +511,22 @@ class _HomeScreenState extends State<HomeScreen> {
     if (confirmed != true) return;
 
     final index = notes.indexWhere((n) => n.id == note.id);
+    if (index == -1) return;
+
     setState(() => notes.removeWhere((n) => n.id == note.id));
     await saveNotes();
 
     if (!mounted) return;
+    ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Text('Note deleted'),
+        content: Text('"$noteTitle" deleted'),
+        behavior: SnackBarBehavior.floating,
         action: SnackBarAction(
           label: 'Undo',
           onPressed: () {
             setState(() {
-              notes.insert(max(0, index), note);
+              notes.insert(min(max(0, index), notes.length), note);
               sortNotes();
             });
             saveNotes();
@@ -369,6 +539,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> togglePin(JotNote note) async {
     setState(() {
       final index = notes.indexWhere((n) => n.id == note.id);
+      if (index == -1) return;
       notes[index] = note.copyWith(pinned: !note.pinned);
       sortNotes();
     });
@@ -378,9 +549,21 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> toggleFavorite(JotNote note) async {
     setState(() {
       final index = notes.indexWhere((n) => n.id == note.id);
+      if (index == -1) return;
       notes[index] = note.copyWith(favorite: !note.favorite);
     });
     saveNotes();
+  }
+
+  void clearSearch() {
+    searchController.clear();
+    setState(() => search = '');
+  }
+
+  @override
+  void dispose() {
+    searchController.dispose();
+    super.dispose();
   }
 
   @override
@@ -434,10 +617,18 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
               child: TextField(
+                controller: searchController,
                 onChanged: (value) => setState(() => search = value),
                 decoration: InputDecoration(
                   hintText: 'Search notes...',
                   prefixIcon: const Icon(Icons.search_rounded),
+                  suffixIcon: search.trim().isEmpty
+                      ? null
+                      : IconButton(
+                          tooltip: 'Clear search',
+                          onPressed: clearSearch,
+                          icon: const Icon(Icons.close_rounded),
+                        ),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(22),
@@ -448,29 +639,46 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Expanded(
               child: visible.isEmpty
-                  ? EmptyNotesState(onAdd: () => openEditor())
-                  : GridView.builder(
-                padding: const EdgeInsets.fromLTRB(18, 4, 18, 100),
-                itemCount: visible.length,
-                gridDelegate:
-                const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
-                  childAspectRatio: .78,
-                ),
-                itemBuilder: (context, index) {
-                  final note = visible[index];
-                  return NoteTile(
-                    note: note,
-                    index: index,
-                    onTap: () => openEditor(note),
-                    onDelete: () => deleteNote(note),
-                    onPin: () => togglePin(note),
-                    onFavorite: () => toggleFavorite(note),
-                  );
-                },
-              ),
+                  ? EmptyNotesState(
+                      hasNotes: notes.isNotEmpty,
+                      hasSearch: search.trim().isNotEmpty,
+                      favoritesOnly: tab == HomeTab.favorites,
+                      onAdd: () => openEditor(),
+                      onClearSearch: clearSearch,
+                    )
+                  : LayoutBuilder(
+                      builder: (context, constraints) {
+                        final crossAxisCount = constraints.maxWidth < 360
+                            ? 1
+                            : constraints.maxWidth < 720
+                                ? 2
+                                : 3;
+
+                        return GridView.builder(
+                          padding:
+                              const EdgeInsets.fromLTRB(18, 4, 18, 100),
+                          itemCount: visible.length,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: crossAxisCount,
+                            crossAxisSpacing: 12,
+                            mainAxisSpacing: 12,
+                            childAspectRatio: crossAxisCount == 1 ? 1.45 : .78,
+                          ),
+                          itemBuilder: (context, index) {
+                            final note = visible[index];
+                            return NoteTile(
+                              note: note,
+                              index: index,
+                              onTap: () => openEditor(note),
+                              onDelete: () => deleteNote(note),
+                              onPin: () => togglePin(note),
+                              onFavorite: () => toggleFavorite(note),
+                            );
+                          },
+                        );
+                      },
+                    ),
             ),
           ],
         ),
@@ -504,95 +712,131 @@ class NoteTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final heightOffset = index.isEven ? 0.0 : 18.0;
+    final compactWidth = MediaQuery.sizeOf(context).width < 360;
+    final heightOffset = compactWidth ? 0.0 : index.isEven ? 0.0 : 18.0;
 
     return Transform.translate(
       offset: Offset(0, heightOffset),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(28),
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: note.color,
-            borderRadius: BorderRadius.circular(28),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(.06),
-                blurRadius: 12,
-                offset: const Offset(0, 6),
-              ),
-            ],
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  if (note.pinned) const Icon(Icons.push_pin, size: 18),
-                  const Spacer(),
-                  GestureDetector(
-                    onTap: onFavorite,
-                    child: Icon(
-                      note.favorite ? Icons.star_rounded : Icons.star_border,
-                      size: 22,
-                    ),
-                  ),
-                  const SizedBox(width: 4),
-                  GestureDetector(
-                    onTap: onDelete,
-                    child: const Icon(Icons.close_rounded, size: 21),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                note.title,
-                maxLines: 3,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
-                  color: _ink,
-                  fontSize: 20,
-                  height: 1.05,
-                  fontWeight: FontWeight.w900,
+      child: Semantics(
+        button: true,
+        label: 'Open note ${note.title}',
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(28),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: note.color,
+              borderRadius: BorderRadius.circular(28),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(.06),
+                  blurRadius: 12,
+                  offset: const Offset(0, 6),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Expanded(
-                child: Text(
-                  note.body,
-                  maxLines: 7,
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    if (note.pinned)
+                      const Icon(Icons.push_pin, size: 18),
+                    const Spacer(),
+                    IconButton(
+                      tooltip: note.favorite
+                          ? 'Remove from favorites'
+                          : 'Add to favorites',
+                      visualDensity: VisualDensity.compact,
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(
+                        minWidth: 36,
+                        minHeight: 36,
+                      ),
+                      onPressed: onFavorite,
+                      icon: Icon(
+                        note.favorite
+                            ? Icons.star_rounded
+                            : Icons.star_border,
+                        size: 22,
+                        color: _ink,
+                      ),
+                    ),
+                    IconButton(
+                      tooltip: 'Delete note',
+                      visualDensity: VisualDensity.compact,
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(
+                        minWidth: 36,
+                        minHeight: 36,
+                      ),
+                      onPressed: onDelete,
+                      icon: const Icon(
+                        Icons.close_rounded,
+                        size: 21,
+                        color: _ink,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  note.title,
+                  maxLines: 3,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: _ink.withOpacity(.78),
-                    fontSize: 14,
-                    height: 1.35,
+                  style: const TextStyle(
+                    color: _ink,
+                    fontSize: 20,
+                    height: 1.05,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
-              ),
-              Row(
-                children: [
-                  Text(
-                    _shortDate(note.createdAt),
+                const SizedBox(height: 10),
+                Expanded(
+                  child: Text(
+                    note.body,
+                    maxLines: compactWidth ? 4 : 7,
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      color: _ink.withOpacity(.55),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 11,
+                      color: _ink.withOpacity(.78),
+                      fontSize: 14,
+                      height: 1.35,
                     ),
                   ),
-                  const Spacer(),
-                  GestureDetector(
-                    onTap: onPin,
-                    child: Icon(
-                      note.pinned
-                          ? Icons.push_pin
-                          : Icons.push_pin_outlined,
-                      size: 19,
+                ),
+                Row(
+                  children: [
+                    Text(
+                      _shortDate(note.createdAt),
+                      style: TextStyle(
+                        color: _ink.withOpacity(.55),
+                        fontWeight: FontWeight.w700,
+                        fontSize: 11,
+                      ),
                     ),
-                  ),
-                ],
-              )
-            ],
+                    const Spacer(),
+                    IconButton(
+                      tooltip: note.pinned ? 'Unpin note' : 'Pin note',
+                      visualDensity: VisualDensity.compact,
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(
+                        minWidth: 36,
+                        minHeight: 36,
+                      ),
+                      onPressed: onPin,
+                      icon: Icon(
+                        note.pinned
+                            ? Icons.push_pin
+                            : Icons.push_pin_outlined,
+                        size: 19,
+                        color: _ink,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),
@@ -601,41 +845,78 @@ class NoteTile extends StatelessWidget {
 }
 
 class EmptyNotesState extends StatelessWidget {
+  final bool hasNotes;
+  final bool hasSearch;
+  final bool favoritesOnly;
   final VoidCallback onAdd;
+  final VoidCallback onClearSearch;
 
-  const EmptyNotesState({super.key, required this.onAdd});
+  const EmptyNotesState({
+    super.key,
+    required this.hasNotes,
+    required this.hasSearch,
+    required this.favoritesOnly,
+    required this.onAdd,
+    required this.onClearSearch,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final title = hasSearch
+        ? 'No matches found'
+        : favoritesOnly && hasNotes
+            ? 'No favorites yet'
+            : 'No notes yet';
+    final message = hasSearch
+        ? 'Try a different word or clear search to see all your notes.'
+        : favoritesOnly && hasNotes
+            ? 'Tap the star on a note to keep it close at hand.'
+            : 'Write your first quick idea, plan, or reminder.';
+    final icon = hasSearch
+        ? Icons.search_off_rounded
+        : favoritesOnly && hasNotes
+            ? Icons.star_border_rounded
+            : Icons.sticky_note_2_rounded;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(34),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset(
-              'assets/logo.png',
-              width: 90,
-              height: 90,
-              errorBuilder: (_, __, ___) =>
-              const Icon(Icons.sticky_note_2_rounded, size: 80),
+            Container(
+              width: 96,
+              height: 96,
+              decoration: BoxDecoration(
+                color: _yellow.withOpacity(.85),
+                borderRadius: BorderRadius.circular(28),
+              ),
+              child: Icon(icon, size: 56, color: _ink),
             ),
             const SizedBox(height: 18),
-            const Text(
-              'No notes yet',
-              style: TextStyle(fontSize: 26, fontWeight: FontWeight.w900),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Write your first quick idea, plan, or reminder.',
+            Text(
+              message,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 22),
-            FilledButton.icon(
-              onPressed: onAdd,
-              icon: const Icon(Icons.add_rounded),
-              label: const Text('Create Note'),
-            ),
+            if (hasSearch)
+              OutlinedButton.icon(
+                onPressed: onClearSearch,
+                icon: const Icon(Icons.close_rounded),
+                label: const Text('Clear search'),
+              )
+            else
+              FilledButton.icon(
+                onPressed: onAdd,
+                icon: const Icon(Icons.add_rounded),
+                label: const Text('Create Note'),
+              ),
           ],
         ),
       ),
@@ -668,11 +949,13 @@ class JotlyBottomBar extends StatelessWidget {
         child: Row(
           children: [
             IconButton(
+              tooltip: 'All notes',
               color: tab == HomeTab.notes ? _yellow : Colors.white54,
               onPressed: () => onTab(HomeTab.notes),
               icon: const Icon(Icons.sticky_note_2_rounded),
             ),
             IconButton(
+              tooltip: 'Favorites',
               color: tab == HomeTab.favorites ? _yellow : Colors.white54,
               onPressed: () => onTab(HomeTab.favorites),
               icon: const Icon(Icons.star_rounded),
@@ -688,11 +971,15 @@ class JotlyBottomBar extends StatelessWidget {
                   padding: EdgeInsets.zero,
                 ),
                 onPressed: onAdd,
-                child: const Icon(Icons.add_rounded),
+                child: const Icon(
+                  Icons.add_rounded,
+                  semanticLabel: 'Create note',
+                ),
               ),
             ),
             const Spacer(),
             IconButton(
+              tooltip: 'Settings',
               color: tab == HomeTab.settings ? _yellow : Colors.white54,
               onPressed: () => onTab(HomeTab.settings),
               icon: const Icon(Icons.settings_rounded),
@@ -780,11 +1067,13 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
               child: Row(
                 children: [
                   IconButton(
+                    tooltip: 'Close editor',
                     onPressed: () => Navigator.pop(context),
                     icon: const Icon(Icons.close_rounded, color: _ink),
                   ),
                   const Spacer(),
                   IconButton(
+                    tooltip: pinned ? 'Unpin note' : 'Pin note',
                     onPressed: () => setState(() => pinned = !pinned),
                     icon: Icon(
                       pinned ? Icons.push_pin : Icons.push_pin_outlined,
@@ -792,6 +1081,9 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
                     ),
                   ),
                   IconButton(
+                    tooltip: favorite
+                        ? 'Remove from favorites'
+                        : 'Add to favorites',
                     onPressed: () => setState(() => favorite = !favorite),
                     icon: Icon(
                       favorite ? Icons.star_rounded : Icons.star_border,
@@ -895,8 +1187,10 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: _cream,
+      backgroundColor: isDark ? Theme.of(context).scaffoldBackgroundColor : _cream,
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(22),
@@ -904,6 +1198,7 @@ class SettingsScreen extends StatelessWidget {
             Row(
               children: [
                 IconButton(
+                  tooltip: 'Back to notes',
                   onPressed: onBackToNotes,
                   icon: const Icon(Icons.arrow_back_rounded),
                 ),
@@ -952,6 +1247,19 @@ class SettingsScreen extends StatelessWidget {
               secondary: const Icon(Icons.dark_mode_rounded),
             ),
             ListTile(
+              leading: const Icon(Icons.info_outline_rounded),
+              title: const Text('App Version'),
+              subtitle: const Text('Version $_appVersion ($_appBuildNumber)'),
+            ),
+            const SizedBox(height: 8),
+            const Center(
+              child: Text(
+                'Made for quick, private notes.',
+                style: TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            const SizedBox(height: 12),
+            ListTile(
               leading: const Icon(Icons.privacy_tip_rounded),
               title: const Text('Privacy Policy'),
               trailing: const Icon(Icons.chevron_right_rounded),
@@ -969,13 +1277,6 @@ class SettingsScreen extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => const TermsScreen()),
               ),
             ),
-            const SizedBox(height: 24),
-            const Center(
-              child: Text(
-                'Version 1.0.0',
-                style: TextStyle(fontWeight: FontWeight.w700),
-              ),
-            ),
           ],
         ),
       ),
@@ -990,8 +1291,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TextPage(
       title: 'Privacy Policy',
-      text:
-      'Jotly stores your notes, favorite status, pinned status, colors, and app settings locally on your device. Jotly does not require login, does not use backend servers, does not use Firebase, does not show ads, does not use analytics, and does not share your notes with third parties. You can delete notes inside the app, clear app data, or uninstall the app to remove locally stored information.',
+      sections: _privacySections,
     );
   }
 }
@@ -1003,46 +1303,90 @@ class TermsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TextPage(
       title: 'Terms & Conditions',
-      text:
-      'Jotly is provided as a simple personal notes app. You are responsible for the content you enter and for keeping your device secure. Jotly does not provide cloud backup or account recovery. The app is provided as-is without guarantees. Do not use Jotly to store passwords, financial secrets, or highly sensitive information unless you understand it is stored locally on your device.',
+      sections: _termsSections,
     );
   }
 }
 
 class TextPage extends StatelessWidget {
   final String title;
-  final String text;
+  final List<LegalSection> sections;
 
   const TextPage({
     super.key,
     required this.title,
-    required this.text,
+    required this.sections,
   });
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final cardColor = isDark ? const Color(0xFF2B2B2B) : Colors.white;
+    final bodyColor = isDark ? Colors.white.withOpacity(.82) : _ink.withOpacity(.8);
+
     return Scaffold(
-      backgroundColor: _cream,
+      backgroundColor: isDark ? Theme.of(context).scaffoldBackgroundColor : _cream,
       appBar: AppBar(title: Text(title)),
-      body: ListView(
-        padding: const EdgeInsets.all(22),
-        children: [
-          Container(
+      body: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 720),
+          child: ListView(
             padding: const EdgeInsets.all(22),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(28),
-            ),
-            child: Text(
-              text,
-              style: const TextStyle(
-                color: _ink,
-                fontSize: 16,
-                height: 1.7,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(22),
+                decoration: BoxDecoration(
+                  color: cardColor,
+                  borderRadius: BorderRadius.circular(28),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontSize: 30,
+                        height: 1.05,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: -.6,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Last Updated: $_lastUpdatedLabel',
+                      style: TextStyle(
+                        color: bodyColor,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    for (final section in sections) ...[
+                      Text(
+                        section.heading,
+                        style: const TextStyle(
+                          fontSize: 19,
+                          height: 1.2,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        section.body,
+                        style: TextStyle(
+                          color: bodyColor,
+                          fontSize: 16,
+                          height: 1.65,
+                        ),
+                      ),
+                      if (section != sections.last) const SizedBox(height: 22),
+                    ],
+                  ],
+                ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

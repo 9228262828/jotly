@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Jotly</title>
+  <meta name="description" content="Jotly Privacy Policy for the local-only notes app.">
+  <style>
+    :root {
+      --cream: #fff8ea;
+      --ink: #222222;
+      --coral: #ff6f61;
+      --yellow: #ffd45a;
+      --sky: #8fd3ff;
+      --paper: #ffffff;
+      --muted: #625d55;
+      --line: rgba(34, 34, 34, 0.12);
+      --shadow: 0 24px 70px rgba(34, 34, 34, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(255, 212, 90, 0.46), transparent 32%),
+        radial-gradient(circle at top right, rgba(143, 211, 255, 0.38), transparent 30%),
+        var(--cream);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      text-decoration: none;
+    }
+
+    .mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--yellow);
+      box-shadow: inset 0 -6px 0 rgba(34, 34, 34, 0.08);
+      font-size: 1.25rem;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav a {
+      display: inline-flex;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--ink);
+      color: #ffffff;
+      outline: none;
+    }
+
+    main {
+      padding: 18px 0 56px;
+    }
+
+    .document {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      padding: clamp(28px, 6vw, 58px);
+      background: linear-gradient(135deg, var(--yellow), rgba(255, 255, 255, 0.58));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 22px 0 12px;
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 0.92;
+      letter-spacing: -0.08em;
+    }
+
+    .summary {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+      font-weight: 650;
+    }
+
+    .last-updated {
+      display: inline-flex;
+      margin-top: 24px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .content {
+      padding: clamp(26px, 5vw, 52px);
+    }
+
+    section + section {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.35rem, 3vw, 1.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      font-weight: 520;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0 36px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        display: grid;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="index.html" aria-label="Jotly home">
+        <span class="mark" aria-hidden="true">J</span>
+        <span>Jotly</span>
+      </a>
+      <nav aria-label="Legal pages">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <article class="document">
+      <div class="hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>Jotly Privacy Policy</h1>
+        <p class="summary">Jotly is a local-only notes app. This policy explains what is stored on your device, what Jotly does not collect, and how you can delete your local data.</p>
+        <span class="last-updated">Last Updated: June 25, 2026</span>
+      </div>
+
+      <div class="content">
+        <section>
+          <h2>Introduction</h2>
+          <p>Jotly is designed as a simple, private notes app for capturing ideas quickly. This Privacy Policy explains how Jotly handles information when you create, edit, organize, search, favorite, pin, or delete notes. The app is intentionally local-only and does not require an account, backend service, Firebase integration, analytics provider, advertising network, notifications, or special device permissions to function.</p>
+        </section>
+
+        <section>
+          <h2>Information We Store</h2>
+          <p>Jotly stores the information you choose to create in the app, including note titles, note bodies, selected note colors, favorite status, pinned status, note creation dates, and app preferences such as dark mode. This information is stored only so Jotly can display your notes, preserve your organization choices, remember your preferred theme, and restore your local workspace the next time you open the app.</p>
+        </section>
+
+        <section>
+          <h2>Local Device Storage</h2>
+          <p>All Jotly note data and app settings are saved locally on your device using SharedPreferences. Jotly does not upload your notes to a server, synchronize notes across devices, host a web dashboard, or provide cloud backup. If your device is lost, reset, damaged, replaced, or if app data is cleared, your locally stored Jotly data may be permanently lost unless your device platform independently backs up app data under your own platform settings.</p>
+        </section>
+
+        <section>
+          <h2>No Account Required</h2>
+          <p>Jotly does not ask you to create an account, sign in, provide an email address, or submit profile information. Because there is no account system, Jotly does not provide account recovery, password reset, server-side identity verification, or cloud restore features. The app opens directly to your local notes experience.</p>
+        </section>
+
+        <section>
+          <h2>No Personal Data Collection</h2>
+          <p>Jotly does not collect personal data from you. The app does not request your name, email address, phone number, precise location, contacts, photos, microphone, camera, calendar, reminders, or other personal information. Any personal information you voluntarily type into a note remains part of your local note content on your device and is not collected by Jotly.</p>
+        </section>
+
+        <section>
+          <h2>No Analytics</h2>
+          <p>Jotly does not include analytics, tracking pixels, behavioral measurement tools, crash reporting SDKs, attribution tools, or event logging services. We do not measure how you use the app, which notes you create, what you search for, which buttons you press, or how often you open particular screens.</p>
+        </section>
+
+        <section>
+          <h2>No Advertising</h2>
+          <p>Jotly does not display advertisements and does not use advertising identifiers. The app does not create advertising profiles, perform ad targeting, sell ad inventory, or share information with ad networks. Your note content is not used for marketing or personalization by Jotly.</p>
+        </section>
+
+        <section>
+          <h2>No Third-Party Sharing</h2>
+          <p>Because Jotly keeps your data on your device and does not operate a backend service, Jotly does not sell, rent, trade, disclose, or share your notes or app settings with third parties. Your device platform may provide its own system-level backup, storage, restore, or diagnostic behavior outside of Jotly; those platform features are controlled by your device settings and governed by the policies of your device provider.</p>
+        </section>
+
+        <section>
+          <h2>Data Security</h2>
+          <p>Jotly relies on your device and operating system to protect locally stored app data. You are responsible for using appropriate device security measures, such as a passcode, biometric lock, encrypted device storage, and secure backups if available. Jotly is not intended to be a dedicated vault for passwords, financial secrets, medical records, legal records, or highly sensitive information requiring specialized security controls.</p>
+        </section>
+
+        <section>
+          <h2>Data Deletion</h2>
+          <p>You can delete individual notes in Jotly. After deleting a note, the app provides a short undo option so you can restore the note if the deletion was accidental. Once the undo period passes, the deleted note is removed from Jotly storage. You can also remove locally stored Jotly data by clearing the app data through your device settings or uninstalling the app.</p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>Jotly does not knowingly collect personal information from children. The app does not include account registration, messaging, public posting, advertising, analytics, or server-side collection features. Parents or guardians who allow a child to use Jotly should understand that any note content entered by the child remains locally on the device.</p>
+        </section>
+
+        <section>
+          <h2>Changes to this Policy</h2>
+          <p>We may update this Privacy Policy when Jotly changes or when legal, operational, or clarity improvements are needed. The updated policy will include a new last updated date. Continuing to use Jotly after an update means you acknowledge the revised policy. Material changes should be reviewed before continued use.</p>
+        </section>
+
+        <section>
+          <h2>Contact Information</h2>
+          <p>If you have questions about this Privacy Policy or Jotly's privacy practices, contact the Jotly team through the support or contact method provided with the app listing or project page. Please do not include sensitive note content unless you are comfortable sharing it outside the app.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <span>&copy; 2026 Jotly. All rights reserved.</span>
+      <span><a href="index.html">Home</a> · <a href="terms-conditions.html">Terms &amp; Conditions</a></span>
+    </div>
+  </footer>
+</body>
+</html>
