@@ -21,7 +21,7 @@ const _notesKey = 'jotly.notes.v1';
 const _darkKey = 'jotly.dark.v1';
 const _appVersion = '1.0.0';
 const _appBuildNumber = '1';
-const _lastUpdatedLabel = 'June 25, 2026';
+const _lastUpdatedLabel = 'june, 2026';
 
 class LegalSection {
   final String heading;
